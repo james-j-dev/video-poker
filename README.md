@@ -33,7 +33,9 @@ Payout tokens to player
 
 # Highest payout to player:
 highestTokenValueReached: 79
+
 reached by: Dad
+
 on: 11/2/23
 
 # Instructions
