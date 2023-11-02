@@ -18,18 +18,23 @@ Replace discarded cards (from top of deck)
 
 Evaluate hand
 
-	•	High card - Payout: 0
-	•	One pair - Payout: 1
-	•	Two pairs - Payout: 2
-	•	Three of a kind - Payout: 3
-	•	Straight - Payout: 4
-	•	Flush - Payout: 5
-	•	Full house - Payout: 6
- 	•	Four of a kind - Payout: 25
-	•	Straight flush - Payout: 50
 	•	Royal flush - Payout: 250
+	•	Straight flush - Payout: 50
+ 	•	Four of a kind - Payout: 25
+	•	Full house - Payout: 6
+	•	Flush - Payout: 5
+	•	Straight - Payout: 4
+	•	Three of a kind - Payout: 3
+	•	Two pairs - Payout: 2
+	•	One pair - Payout: 1
+	•	High card - Payout: 0
 
 Payout tokens to player
+
+# Highest payout to player:
+highestTokenValueReached: 79
+reached by: Dad
+on: 11/2/23
 
 # Instructions
 Run in console

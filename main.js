@@ -81,12 +81,34 @@ while (tokens > 0) { // continue while user has at least 1 token
   }
   console.log("");
 
-  // prompt user to discard 0-5 cards, log action, and replace discarded cards
-  // TODO: (ERROR) user can enter same card more than once (i.e., '33') and cause 2 replacements at that card
-  discardedCards = prompt("Which cards do you wish to discard? (Enter card number(s) of 0-5 cards)");
+  // prompt user to discard 0-5 cards (include instruction on how to quit)
+  discardedCards = prompt("Enter card number(s) to discard 0-5 cards.                  ('Cancel'/'esc' to quit)");
 
+  // if user quits program, print to console and quit game
+  if (discardedCards === null) {
+    console.log("You entered 'Cancel' or 'esc'. Ending game.");
+    break;
+  }
+
+  // remove potential duplicates
+  discardedCards = Array.from(new Set(discardedCards.split(''))).toString().replaceAll(",","");
+
+  // log action for user
   console.log("Discarded:");
 
+
+  // if no cards discarded
+  if (discardedCards.match(/^$/)) { // regex: empty string (discarded no cards)
+    console.log("None");
+
+    // if user input does NOT match accepted range
+  } else if (!(discardedCards.match(/^[1-5]{1,5}$/))) { // regex: 1-5 cards (w/card number of 1-5)
+    discardedCards = ""; // assign discardedCards to empty string
+    console.log("User input invalid. No cards discarded."); // and notify user
+  }
+
+
+  // replace discarded cards
   for (let i = 0; i < discardedCards.length; i++) {
     let indexOfDiscardedCards = discardedCards[i] - 1; // this is index of card in dealtCards
 
