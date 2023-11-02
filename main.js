@@ -69,6 +69,7 @@ while (tokens > 0) { // continue while user has at least 1 token
   dealCards(shuffledDeck, 5);
 
   // print console lines (so prompt doesn't cover initial output);
+  console.log("");
   console.log("//////////////////");
   console.log(" Dealing cards...");
   console.log("//////////////////");

@@ -32,7 +32,7 @@ Evaluate hand
 Payout tokens to player
 
 # Highest payout to player:
-highestTokenValueReached: 79
+highestTokenValueReached: 100
 
 reached by: Dad
 
