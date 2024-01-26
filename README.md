@@ -39,7 +39,7 @@ reached by: Dad
 on: 11/2/23
 
 # Instructions
-Run in console
+Run in Console (Chrome Dev Tools)
 
 # Author/Site Admin
 James Joyner
